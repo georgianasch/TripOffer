@@ -1,0 +1,14 @@
+{
+	"name": "tripoffer",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Simple trip presentation site with a minimal Node server",
+	"type": "commonjs",
+	"scripts": {
+		"start": "node server.js",
+		"dev": "node server.js"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}
