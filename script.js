@@ -12,5 +12,3 @@ navLinks.forEach((link) => {
     }
   });
 });
-
-// RSVP logic removed
