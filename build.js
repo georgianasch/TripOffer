@@ -21,7 +21,12 @@ function renderHtml(filePath, seen = new Set()) {
 // Build index.html
 const output = renderHtml(path.join(__dirname, 'index.html'));
 fs.writeFileSync(path.join(__dirname, 'dist', 'index.html'), output);
+
+// Build china.html
+const chinaOutput = renderHtml(path.join(__dirname, 'china.html'));
+fs.writeFileSync(path.join(__dirname, 'dist', 'china.html'), chinaOutput);
+
 fs.copyFileSync(path.join(__dirname, 'styles.css'), path.join(__dirname, 'dist', 'styles.css'));
 fs.copyFileSync(path.join(__dirname, 'script.js'), path.join(__dirname, 'dist', 'script.js'));
 
-console.log('✓ Build complete: dist/index.html');
+console.log('✓ Build complete: dist/index.html, dist/china.html');
