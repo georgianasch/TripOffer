@@ -30,7 +30,11 @@ fs.writeFileSync(path.join(__dirname, 'dist', 'china.html'), chinaOutput);
 const qatarOutput = renderHtml(path.join(__dirname, 'qatar.html'));
 fs.writeFileSync(path.join(__dirname, 'dist', 'qatar.html'), qatarOutput);
 
+// Build china-may.html
+const chinaMayOutput = renderHtml(path.join(__dirname, 'china-may.html'));
+fs.writeFileSync(path.join(__dirname, 'dist', 'china-may.html'), chinaMayOutput);
+
 fs.copyFileSync(path.join(__dirname, 'styles.css'), path.join(__dirname, 'dist', 'styles.css'));
 fs.copyFileSync(path.join(__dirname, 'script.js'), path.join(__dirname, 'dist', 'script.js'));
 
-console.log('✓ Build complete: dist/index.html, dist/china.html, dist/qatar.html');
+console.log('✓ Build complete: dist/index.html, dist/china.html, dist/qatar.html, dist/china-may.html');
